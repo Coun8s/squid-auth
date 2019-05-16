@@ -20,7 +20,7 @@ $ sudo docker run -d --name squid-auth \
 -e TZ=Europe/Saratov
   coun/squid-auth:latest
 ```
-2. Add to LDAP
+2. Add to Active Directory
 ```bash
 sudo docker exec -ti squid-auth adldap
 sudo docker restart squid-auth

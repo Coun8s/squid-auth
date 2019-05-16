@@ -9,7 +9,7 @@ $ sudo docker run -d --name squid-auth \
 --net host \
 --hostname squid-aeth
 --dns 8.8.8.8
---dns-search chostname.domain.local
+--dns-search domain.local
 --volume squid-logs:/var/log/squid \
 --volume squid-etc-auth:/etc/squid \
 --volume squid-cache:/var/cache/squid \

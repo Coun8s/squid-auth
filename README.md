@@ -4,9 +4,10 @@ Dockerfile for Squid LDAP authentication
 1. Start container
 ```bash
 $ sudo docker run -d --name squid-auth \
+--cap-add=NET_ADMIN \
 --restart always \
 --net host \
---cap-add=NET_ADMIN \
+--hostname squid-aeth
 --dns 8.8.8.8
 --dns-search chostname.domain.local
 --volume squid-logs:/var/log/squid \

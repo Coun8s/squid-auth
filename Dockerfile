@@ -101,6 +101,6 @@ VOLUME ["/var/log/squid"] \
 	   ["/etc/squid"] \
 	   ["/var/cache/squid"]
 
-EXPOSE 3128
+EXPOSE 3127
 
 CMD /usr/bin/systemctl
